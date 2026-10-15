@@ -16,10 +16,10 @@ jobs:
       contents: write
     steps:
       # ==========================================
-      # 1. คอลัมน์ฝั่งซ้าย (ดึงกราฟสีเขียวเพิ่มเป็น 30 วัน)
+      # 1. คอลัมน์ฝั่งซ้าย
       # ==========================================
       - name: Left Column
-        uses: lowlighter/metrics@latest
+        uses: lowlighter/metrics@master
         with:
           filename: metrics.left.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -30,9 +30,9 @@ jobs:
           base_indepth: yes
           plugin_lines: yes
           plugin_habits: yes
-          plugin_habits_from: 200
-          plugin_habits_days: 30
-          plugin_habits_facts: no
+          plugin_habits_from: 50
+          plugin_habits_days: 14
+          plugin_habits_facts: yes
           plugin_habits_charts: yes
           plugin_topics: yes
           plugin_topics_mode: icons
@@ -40,10 +40,10 @@ jobs:
           plugin_topics_limit: 0
 
       # ==========================================
-      # 2. คอลัมน์ฝั่งขวา (ปฏิทิน 3D)
+      # 2. คอลัมน์ฝั่งขวา
       # ==========================================
       - name: Right Column
-        uses: lowlighter/metrics@latest
+        uses: lowlighter/metrics@master
         with:
           filename: metrics.right.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -51,21 +51,19 @@ jobs:
           template: classic
           config_timezone: Asia/Bangkok
           base: ""
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: half-year
-          plugin_music: yes
-          plugin_music_mode: playlist
-          plugin_music_playlist: https://embed.music.apple.com/fr/playlist/usr-share/pl.u-V9D7m8kB15514
-          plugin_music_limit: 2
           plugin_languages: yes
           plugin_languages_limit: 8
           plugin_languages_sections: most-used
-          plugin_projects: yes
-          plugin_projects_limit: 1
-          plugin_projects_descriptions: yes
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
+          plugin_music: yes
+          plugin_music_provider: apple
+          plugin_music_mode: playlist
+          plugin_music_playlist: https://embed.music.apple.com/fr/playlist/usr-share/pl.u-V9D7m8kB15514
+          plugin_music_limit: 2
 
       # ==========================================
-      # 3. อนิเมชันงู (โทนสีเขียวนีออนสว่างพิเศษ)
+      # 3. อนิเมชันงู + สร้างเส้นไฟนีออนวิ่งสลับสี (Animated RGB Neon)
       # ==========================================
       - name: Checkout Repo
         uses: actions/checkout@v4
@@ -73,7 +71,7 @@ jobs:
           ref: main
           fetch-depth: 0
 
-      - name: Pull latest changes before generating snake
+      - name: Pull latest changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -87,7 +85,68 @@ jobs:
             dist/github-snake.svg?color_snake=#a855f7&color_dots=#16261c,#00e65b,#00ff66,#39ff14,#76ff03
             dist/github-snake-dark.svg?palette=github-dark&color_snake=#a855f7&color_dots=#15221a,#00e65b,#00ff66,#39ff14,#76ff03
 
-      - name: Commit and Push Snake Animation
+      - name: Generate Animated Neon RGB Dividers & Frame
+        run: |
+          mkdir -p dist
+          # 1. สร้างแถบเส้นไฟนีออนวิ่งสลับสี (เขียว -> ฟ้า -> ม่วง -> ชมพู -> เขียว) พร้อมเอฟเฟกต์เรืองแสง (Glow)
+          cat << 'EOF' > dist/neon-bar.svg
+          <svg width="100%" height="18" viewBox="0 0 1000 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#00ff66">
+                  <animate attributeName="stop-color" values="#00ff66;#00f2fe;#a855f7;#ff007f;#00ff66" dur="4s" repeatCount="indefinite" />
+                </stop>
+                <stop offset="50%" stop-color="#00f2fe">
+                  <animate attributeName="stop-color" values="#00f2fe;#a855f7;#ff007f;#00ff66;#00f2fe" dur="4s" repeatCount="indefinite" />
+                </stop>
+                <stop offset="100%" stop-color="#a855f7">
+                  <animate attributeName="stop-color" values="#a855f7;#ff007f;#00ff66;#00f2fe;#a855f7" dur="4s" repeatCount="indefinite" />
+                </stop>
+              </linearGradient>
+              <filter id="glow" x="-20%" y="-50%" width="140%" height="200%">
+                <feGaussianBlur stdDeviation="4" result="blur" />
+                <feMerge>
+                  <feMergeNode in="blur" />
+                  <feMergeNode in="blur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+            <rect x="10" y="7" width="980" height="4" rx="2" fill="url(#neonGrad)" filter="url(#glow)" />
+          </svg>
+          EOF
+
+          # 2. สร้างกรอบป้ายไฟนีออนวิ่งรอบเส้นขอบด้านบน (Animated Neon Box Border)
+          cat << 'EOF' > dist/neon-header.svg
+          <svg width="100%" height="70" viewBox="0 0 900 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#00ff66">
+                  <animate attributeName="stop-color" values="#00ff66;#00f2fe;#a855f7;#ff007f;#00ff66" dur="3s" repeatCount="indefinite" />
+                </stop>
+                <stop offset="50%" stop-color="#00f2fe">
+                  <animate attributeName="stop-color" values="#00f2fe;#a855f7;#ff007f;#00ff66;#00f2fe" dur="3s" repeatCount="indefinite" />
+                </stop>
+                <stop offset="100%" stop-color="#ff007f">
+                  <animate attributeName="stop-color" values="#ff007f;#00ff66;#00f2fe;#a855f7;#ff007f" dur="3s" repeatCount="indefinite" />
+                </stop>
+              </linearGradient>
+              <filter id="neonGlow" x="-10%" y="-20%" width="120%" height="140%">
+                <feGaussianBlur stdDeviation="3.5" result="blur" />
+                <feMerge>
+                  <feMergeNode in="blur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+            <rect x="8" y="8" width="884" height="54" rx="14" fill="#0d1117" stroke="url(#boxGrad)" stroke-width="3.5" filter="url(#neonGlow)" />
+            <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle" fill="url(#boxGrad)" font-family="Segoe UI, Ubuntu, sans-serif" font-weight="bold" font-size="22" letter-spacing="3">
+              ⚡ WELCOME TO TONKAR293'S GITHUB PROFILE ⚡
+            </text>
+          </svg>
+          EOF
+
+      - name: Commit and Push Animations
         run: |
           git add dist/*.svg
-          git diff --staged --quiet || (git commit -m "Update snake animation" && git pull --rebase origin main && git push origin main)
+          git diff --staged --quiet || (git commit -m "Update snake and neon animations" && git pull --rebase origin main && git push origin main)
