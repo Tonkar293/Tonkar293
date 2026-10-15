@@ -11,3 +11,13 @@
   <br/>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Tonkar293&layout=compact&theme=dark&bg_color=0d1117&hide_border=true" height="150" alt="languages graph" />
 </div>
+
+<br/>
+
+ <div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="/dist/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="/dist/github-snake.svg" />
+    <img alt="github-snake" src="/dist/github-snake-dark.svg" width="100%" />
+  </picture>
+</div>
