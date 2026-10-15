@@ -1,8 +1,12 @@
-name: Metrics
+name: GitHub Metrics
+
 on:
+  # รันอัตโนมัติทุกๆ 24 ชั่วโมง
   schedule: [{cron: "0 0 * * *"}]
+  # สามารถกดรันเองได้ในแท็บ Actions
   workflow_dispatch:
-  push: {branches: ["master", "main"]}
+  # รันเมื่อมีการแก้ไขไฟล์ใน main
+  push: {branches: ["main", "master"]}
 
 jobs:
   github-metrics:
@@ -10,30 +14,61 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+      # ==========================================
+      # 1. สร้างคอลัมน์ฝั่งซ้าย (Header + Habits + Tech Icons)
+      # ==========================================
+      - name: Left Column (Base, Habits, Starred Topics)
+        uses: lowlighter/metrics@latest
         with:
+          filename: metrics.left.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          user: ${{ github.repository_owner }}
+          user: Tonkar293
           template: classic
-          base: header, activity, community, repositories, metadata
           config_timezone: Asia/Bangkok
-
-          # 3D Isometric Calendar
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
-
-          # Coding habits
+          
+          # ส่วนข้อมูลพื้นฐานด้านบน
+          base: header, repositories
+          base_indepth: yes
+          repositories_batch: 100
+          
+          # ปลั๊กอิน Lines of code (แสดงจำนวนบรรทัดที่เพิ่ม/ลบ)
+          plugin_lines: yes
+          
+          # ปลั๊กอิน Coding habits (แก้ Error ด้วยการใช้โหมด facts + charts และจำกัดจำนวน event)
           plugin_habits: yes
-          plugin_habits_from: 200
+          plugin_habits_from: 100
           plugin_habits_days: 14
           plugin_habits_facts: yes
           plugin_habits_charts: yes
+          
+          # ปลั๊กอินแสดงไอคอนเทคโนโลยี (Mastered technologies and topics)
+          plugin_topics: yes
+          plugin_topics_mode: icons
+          plugin_topics_sort: stars
+          plugin_topics_limit: 0
 
-          # Languages
+      # ==========================================
+      # 2. สร้างคอลัมน์ฝั่งขวา (3D Calendar + Languages)
+      # ==========================================
+      - name: Right Column (Isometric Calendar & Languages)
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.right.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: Tonkar293
+          template: classic
+          config_timezone: Asia/Bangkok
+          
+          # ปิดส่วนหัวเพื่อไม่ให้ซ้ำกับฝั่งซ้าย
+          base: ""
+          
+          # ปลั๊กอินปฏิทิน 3D (แบบครึ่งปีเหมือนในรูปตัวอย่าง)
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
+          
+          # ปลั๊กอินแสดงภาษาที่ใช้มากที่สุด
           plugin_languages: yes
-          plugin_languages_analysis_timeout: 15
-          plugin_languages_categories: markup, programming
-          plugin_languages_colors: github
+          plugin_languages_ignored: html, css
           plugin_languages_limit: 8
           plugin_languages_sections: most-used
-          plugin_languages_details: bytes-size, percentage
+          plugin_languages_details: percentage
