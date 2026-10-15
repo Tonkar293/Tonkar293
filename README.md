@@ -5,11 +5,12 @@
 
 <br/>
 
-<!-- ส่วนที่ 1: ถ้วยรางวัลความสำเร็จ (GitHub Trophies) -->
+<!-- ส่วนที่ 1: ยอดคนเข้าชมโปรไฟล์ (Profile Views) -->
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Tonkar293&theme=radical&row=1&column=6&no-frame=true&no-bg=true" alt="Trophies" />
+  <a href="https://github.com/Tonkar293">
+    <img src="https://komarev.com/ghpvc/?username=Tonkar293&label=PROFILE+VIEWS&color=00ff66&style=for-the-badge" alt="Profile Views" />
+  </a>
 </div>
-
 <br/>
 
 <!-- ส่วนที่ 2: GitHub Metrics (ซ้าย-ขวา) -->
