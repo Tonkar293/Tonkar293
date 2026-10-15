@@ -31,12 +31,6 @@
   <!-- กล่องที่ 3: ไล่เฉด 3 สีสลับกัน (ฟ้านีออน -> ม่วงนีออน -> เขียวนีออน) -->
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Tonkar293&layout=compact&bg_color=45,062c1b,0d1117,2e0827,06283d&title_color=ff007f&text_color=ffffff&border_color=a855f7&hide_border=false&border_radius=14&v=5" height="155" alt="languages graph" />
 </div>
-  
-  <!-- กล่องที่ 3: ไล่เฉด 3 สีสลับกัน (ฟ้านีออน -> ม่วงนีออน -> เขียวนีออน) -->
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Tonkar293&layout=compact&bg_color=45,062c1b,0d1117,2e0827,06283d&title_color=ff007f&text_color=ffffff&border_color=a855f7&hide_border=false&border_radius=14&v=4" height="155" alt="languages graph" />
-</div>
-
-<br/>
 
 <!-- เส้นไฟนีออนเรืองแสงวิ่งสลับสีเอง (คั่นโซนที่ 2) -->
 <div align="center">
