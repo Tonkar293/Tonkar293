@@ -1,11 +1,8 @@
 name: GitHub Metrics
 
 on:
-  # รันอัตโนมัติทุกๆ 24 ชั่วโมง
   schedule: [{cron: "0 0 * * *"}]
-  # สามารถกดรันเองได้ในแท็บ Actions
   workflow_dispatch:
-  # รันเมื่อมีการแก้ไขไฟล์ใน main
   push: {branches: ["main", "master"]}
 
 jobs:
@@ -15,9 +12,9 @@ jobs:
       contents: write
     steps:
       # ==========================================
-      # 1. สร้างคอลัมน์ฝั่งซ้าย (Header + Habits + Tech Icons)
+      # 1. คอลัมน์ฝั่งซ้าย (Metrics Left)
       # ==========================================
-      - name: Left Column (Base, Habits, Starred Topics)
+      - name: Left Column
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.left.svg
@@ -25,32 +22,23 @@ jobs:
           user: Tonkar293
           template: classic
           config_timezone: Asia/Bangkok
-          
-          # ส่วนข้อมูลพื้นฐานด้านบน
           base: header, repositories
           base_indepth: yes
-          repositories_batch: 100
-          
-          # ปลั๊กอิน Lines of code (แสดงจำนวนบรรทัดที่เพิ่ม/ลบ)
           plugin_lines: yes
-          
-          # ปลั๊กอิน Coding habits (แก้ Error ด้วยการใช้โหมด facts + charts และจำกัดจำนวน event)
           plugin_habits: yes
           plugin_habits_from: 100
           plugin_habits_days: 14
-          plugin_habits_facts: yes
+          plugin_habits_facts: no
           plugin_habits_charts: yes
-          
-          # ปลั๊กอินแสดงไอคอนเทคโนโลยี (Mastered technologies and topics)
           plugin_topics: yes
           plugin_topics_mode: icons
           plugin_topics_sort: stars
           plugin_topics_limit: 0
 
       # ==========================================
-      # 2. สร้างคอลัมน์ฝั่งขวา (3D Calendar + Languages)
+      # 2. คอลัมน์ฝั่งขวา (Metrics Right)
       # ==========================================
-      - name: Right Column (Isometric Calendar & Languages)
+      - name: Right Column
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.right.svg
@@ -58,17 +46,36 @@ jobs:
           user: Tonkar293
           template: classic
           config_timezone: Asia/Bangkok
-          
-          # ปิดส่วนหัวเพื่อไม่ให้ซ้ำกับฝั่งซ้าย
           base: ""
-          
-          # ปลั๊กอินปฏิทิน 3D (แบบครึ่งปีเหมือนในรูปตัวอย่าง)
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
-          
-          # ปลั๊กอินแสดงภาษาที่ใช้มากที่สุด
+          plugin_music: yes
+          plugin_music_mode: playlist
+          plugin_music_playlist: https://embed.music.apple.com/fr/playlist/usr-share/pl.u-V9D7m8kB15514
+          plugin_music_limit: 2
           plugin_languages: yes
-          plugin_languages_ignored: html, css
           plugin_languages_limit: 8
           plugin_languages_sections: most-used
-          plugin_languages_details: percentage
+          plugin_projects: yes
+          plugin_projects_limit: 1
+          plugin_projects_descriptions: yes
+
+      # ==========================================
+      # 3. สร้างอนิเมชันงูกินตาราง Commit (Snake Animation)
+      # ==========================================
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Generate Snake Animation
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: Tonkar293
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+
+      - name: Push Snake Animation to Repo
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update snake animation"
+          file_pattern: dist/*.svg
