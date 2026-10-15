@@ -5,7 +5,6 @@ on:
   workflow_dispatch:
   push:
     branches: ["main", "master"]
-    # ป้องกันไม่ให้ Action รันวนซ้ำตอนที่บอทอัปเดตรูปภาพเอง
     paths-ignore:
       - "*.svg"
       - "dist/*.svg"
@@ -17,7 +16,7 @@ jobs:
       contents: write
     steps:
       # ==========================================
-      # 1. คอลัมน์ฝั่งซ้าย (Metrics Left)
+      # 1. คอลัมน์ฝั่งซ้าย (ดึงกราฟสีเขียวเพิ่มเป็น 30 วัน)
       # ==========================================
       - name: Left Column
         uses: lowlighter/metrics@latest
@@ -30,18 +29,21 @@ jobs:
           base: header, repositories
           base_indepth: yes
           plugin_lines: yes
+          
+          # ดึงประวัติย้อนหลัง 30 วัน เพื่อให้มีแท่งกราฟสีเขียวขึ้นเยอะขึ้น
           plugin_habits: yes
-          plugin_habits_from: 100
-          plugin_habits_days: 14
+          plugin_habits_from: 200
+          plugin_habits_days: 30
           plugin_habits_facts: no
           plugin_habits_charts: yes
+          
           plugin_topics: yes
           plugin_topics_mode: icons
           plugin_topics_sort: stars
           plugin_topics_limit: 0
 
       # ==========================================
-      # 2. คอลัมน์ฝั่งขวา (Metrics Right)
+      # 2. คอลัมน์ฝั่งขวา (ปฏิทิน 3D)
       # ==========================================
       - name: Right Column
         uses: lowlighter/metrics@latest
@@ -52,21 +54,25 @@ jobs:
           template: classic
           config_timezone: Asia/Bangkok
           base: ""
+          
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
+          
           plugin_music: yes
           plugin_music_mode: playlist
           plugin_music_playlist: https://embed.music.apple.com/fr/playlist/usr-share/pl.u-V9D7m8kB15514
           plugin_music_limit: 2
+          
           plugin_languages: yes
           plugin_languages_limit: 8
           plugin_languages_sections: most-used
+          
           plugin_projects: yes
           plugin_projects_limit: 1
           plugin_projects_descriptions: yes
 
       # ==========================================
-      # 3. สร้างอนิเมชันงูกินตาราง Commit (Snake Animation)
+      # 3. อนิเมชันงู (โทนสีเขียวนีออนสว่างพิเศษ)
       # ==========================================
       - name: Checkout Repo
         uses: actions/checkout@v4
@@ -79,8 +85,8 @@ jobs:
         with:
           github_user_name: Tonkar293
           outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
+            dist/github-snake.svg?color_snake=#a855f7&color_dots=#16261c,#00e65b,#00ff66,#39ff14,#76ff03
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=#a855f7&color_dots=#15221a,#00e65b,#00ff66,#39ff14,#76ff03
 
       - name: Commit and Push Snake Animation
         run: |
