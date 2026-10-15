@@ -26,8 +26,7 @@
   <!-- กล่องที่ 2: สลับสีเป็น ม่วงเข้ม -> ดำ -> ฟ้านีออน -->
   <img src="https://streak-stats.demolab.com?user=Tonkar293&theme=dark&background=135,220b38,0d1117,06283d&border=00f2fe&hide_border=false&border_radius=14&stroke=a855f7&ring=00f2fe&fire=ff007f&currStreakLabel=00ff66&sideLabels=00f2fe&currStreakNum=ffffff&sideNums=ff007f" height="165" alt="streak graph" />
   
-  <br/><br/>
-  
+  <br/>
   <!-- กล่องที่ 3: ไล่เฉด 3 สีสลับกัน (ฟ้านีออน -> ม่วงนีออน -> เขียวนีออน) -->
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Tonkar293&layout=compact&bg_color=45,062c1b,0d1117,2e0827,06283d&title_color=ff007f&text_color=ffffff&border_color=a855f7&hide_border=false&border_radius=14&v=5" height="155" alt="languages graph" />
 </div>
