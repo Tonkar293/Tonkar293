@@ -8,10 +8,9 @@
 <!-- ส่วนที่ 1: ยอดคนเข้าชมโปรไฟล์ (Profile Views) -->
 <div align="center">
   <a href="https://github.com/Tonkar293">
-    <img src="https://komarev.com/ghpvc/?username=Tonkar293&label=PROFILE+VIEWS&color=00ff66&style=for-the-badge" alt="Profile Views" />
+    <img src="https://komarev.com/ghpvc/?username=Tonkar293&label=PROFILE+VIEWS&color=00ff66&style=for-the-badge&v=1" alt="Profile Views" />
   </a>
 </div>
-<br/>
 
 <!-- ส่วนที่ 2: GitHub Metrics (ซ้าย-ขวา) -->
 <div align="center">
