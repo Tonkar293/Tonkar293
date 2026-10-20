@@ -7,10 +7,9 @@
 
 <!-- ส่วนที่ 1: ยอดคนเข้าชมโปรไฟล์ (Profile Views) -->
 <div align="center">
-  <a href="https://github.com/Tonkar293">
-    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FTonkar293&count_bg=%2300ff66&title_bg=%230d1117&icon=&icon_color=%23E7E7E7&title=PROFILE+VIEWS&edge_flat=false" alt="Profile Views" />
-  </a>
+  <img src="https://api.visitorbadge.io/api/visitors?path=Tonkar293.Tonkar293&label=PROFILE%20VIEWS&labelColor=%230d1117&countColor=%2300ff66&style=for-the-badge" alt="Profile Views" />
 </div>
+<br/>
 
 <!-- ส่วนที่ 2: GitHub Metrics (ซ้าย-ขวา) -->
 <div align="center">
