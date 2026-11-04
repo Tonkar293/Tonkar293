@@ -55,6 +55,7 @@
 
 <!-- ส่วนที่ 4: Terminal (Vertical Stack Layout - Overpowered Fake Specs) -->
 ```text
+──────────────────────────────────────────────────────────────────────────────
 ┌──(tonkar293@arch)-[~]
 └─$ fastfetch
                    -`               tonkar293@arch
@@ -103,39 +104,3 @@
 
 ──────────────────────────────────────────────────────────────────────────────
 
-┌──(tonkar293@ubuntu)-[~]
-└─$ fastfetch
-             .-/+oossssoo+/-.               tonkar293@ubuntu
-         `:+ssssssssssssssssss+:`           ----------------
-       -+ssssssssssssssssssyyssss+-         OS: Ubuntu 2077 LTS (Cyberpunk Edition)
-     .ossssssssssssssssssdMMMNysssso.       Host: Skynet Central Core Node
-    /ssssssssssshdmmNNmmyNMMMMhssssss       Kernel: 8.0.0-matrix-generic
-   +ssssssssshmydMMMMMMMNddddysssssss       Uptime: Since the Big Bang
-  /sssssssshNMMMyhhyyyyhmNMMMNhssssss       Packages: 9999999 (dpkg)
- .ssssssssdMMMNhsssssssssshNMMMdsssss       Shell: telepathy 1.0
-  sssssssshNMMMyhhyyyyhmNMMMNhsssssss       CPU: Dyson Sphere Powered Processor
-  +sssssssssdmydMMMMMMMNddddyssssssss       Memory: Infinite Loop RAM
-   /ssssssssssshdmmNNmmyNMMMMhssssss        Role: Universal Matrix Simulator
-    .ossssssssssssssssssdMMMNysssso.
-      -+sssssssssssssssssyyyssss+-
-         `:+ssssssssssssssssss+:`
-             .-/+oossssoo+/-.
-
-──────────────────────────────────────────────────────────────────────────────
-
-PS C:\Users\tonkar293> fastfetch
-                                            tonkar293@windows
-   ################  ################       -----------------
-   ################  ################       OS: Windows 99 Pro Max Ultra x128
-   ################  ################       Host: Stark Industries J.A.R.V.I.S. Rig
-   ################  ################       Kernel: NT 20.0.99999
-   ################  ################       Uptime: Never sleeps
-   ################  ################       Cooling: Liquid Helium Sub-Zero Loop
-   ################  ################       CPU: Intel Core i99 (512 Cores @ 100GHz)
-                                            GPU: Dual NVIDIA RTX 10090 (256GB VRAM)
-   ################  ################       Memory: 1024 GiB DDR10
-   ################  ################       Monitor: 16K Holographic Display
-   ################  ################       Role: Reality Rendering & God-Tier Gaming
-   ################  ################       
-   ################  ################       
-   ################  ################
