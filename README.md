@@ -24,10 +24,10 @@
 
 <br/>
 
-<!-- ส่วนที่ 3: สถิติและทักษะ (ปรับเป็นป้าย Static ไม่มีวันพัง) -->
+<!-- ส่วนที่ 3: สถิติและทักษะ (ป้าย Static ไม่มีวันพัง) -->
 <div align="center">
   
-  <!-- ป้ายสถิติ GitHub (ปรับตัวเลขเองได้ที่ลิงก์) -->
+  <!-- ป้ายสถิติ GitHub -->
   <img src="https://img.shields.io/badge/Total_Contributions-56-ff007f?style=for-the-badge&logo=github&logoColor=white" alt="Total Contributions" />
   <img src="https://img.shields.io/badge/Longest_Streak-5_Days-00f2fe?style=for-the-badge&logo=target&logoColor=white" alt="Longest Streak" />
   <img src="https://img.shields.io/badge/Repositories-15+-00ff66?style=for-the-badge&logo=gnubash&logoColor=black" alt="Repos" />
@@ -51,16 +51,26 @@
   <img src="/dist/neon-bar.svg" width="100%" alt="Animated Neon Bar" />
 </div>
 
-<!-- ส่วนที่ 4: อนิเมชันงูกินตาราง Commit -->
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="/dist/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="/dist/github-snake.svg" />
-    <img alt="github-snake" src="/dist/github-snake-dark.svg" width="100%" />
-  </picture>
-</div>
+<br/>
 
-<!-- เส้นไฟนีออนเรืองแสงวิ่งสลับสีปิดท้ายด้านล่างสุด -->
-<div align="center">
-  <img src="/dist/neon-bar.svg" width="100%" alt="Animated Neon Bar" />
-</div>
+<!-- ส่วนที่ 4: Terminal (Fastfetch - Arch Linux) -->
+```text
+                   -`               tonkar293@github
+                  .o+`              ----------------
+                 `ooo/              OS: Arch Linux x86_64
+                `+oooo:             Host: Acer Nitro V15 (ANV15-51-50UV)
+               `+oooooo:            Kernel: 6.9.8-arch1-1
+               -+oooooo+:           Uptime: 20 years, 10 months
+             `/:-:++oooo+:          Packages: 56 (pacman)
+            `/++++/+++++++:         Shell: zsh 5.9
+           `/++++++++++++++:        Terminal: Markdown
+          `/+++ooooooooooooo/`      CPU: Intel Core i5 (13th Gen)
+         ./ooosssso++osssssso+`     GPU: NVIDIA GeForce RTX 4050
+        .oossssso-````/ossssss+`    Memory: 16GiB DDR5
+       -osssssso.      :ssssssso.   
+      :osssssss/        osssso+++.  
+     /ossssssss/        +ssssooo/-  
+   `/ossssso+/:-        -:/+osssso+-
+  `+sso+:-`                 `.-/+oso:
+ `++:.                           `-/+/
+ .`                                 `/
