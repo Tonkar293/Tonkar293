@@ -53,34 +53,89 @@
 
 <br/>
 
-<!-- ส่วนที่ 4: Terminal (Split Pane: Arch Linux & Kali Linux) -->
+<!-- ส่วนที่ 4: Terminal (Vertical Stack Layout - Overpowered Fake Specs) -->
 ```text
-┌──(tonkar293㉿arch)-[~]               │┌──(tonkar293㉿kali)-[~]
-└─$ fastfetch                         │└─$ fastfetch
-                                      │
-                   -`                 │         ..............
-                  .o+`                │             ..,;:ccc,.
-                 `ooo/                │           ......``;lxO.
-                `+oooo:               │ .....''''..........,:ld;
-               `+oooooo:              │            .';;;:::;,,.x,
-               -+oooooo+:             │       ..'''.            0Xxoc:,.  ...
-             `/:-:++oooo+:            │   ....                ,ONkc;,;cokOdc',.
-            `/++++/+++++++:           │  .                   OMo           ':ddo.
-           `/++++++++++++++:          │                     dMc               :OO;
-          `/+++ooooooooooooo/`        │                     0M.                 .:o.
-         ./ooosssso++osssssso+`       │                     ;Wd
-        .oossssso-````/ossssss+`      │                      ;XO,
-       -osssssso.      :ssssssso.     │                        ,d0Odlc;,..
-      :osssssss/        osssso+++.    │                            ..',;:cdOOd::,.
-     /ossssssss/        +ssssooo/-    │                                     .:d;.':;.
-   `/ossssso+/:-        -:/+osssso+-  │                                        'd,  .'
-  `+sso+:-`                 `.-/+oso: │                                          ;l   ..
- `++:.                           `-/+/│                                           .o
- .`                                 `/│                                             c
-                                      │
- OS: Arch Linux x86_64                │ OS: Kali GNU/Linux Rolling x86_64
- Host: Cyberdyne Mainframe v9.0       │ Host: Windows Subsystem for Linux (WSL2)
- Kernel: 7.0.1-zen-hacker             │ Kernel: 6.6.9-kali-amd64
- Shell: zsh (oh-my-zsh)               │ Shell: zsh 5.9
- Packages: 9999 (pacman)              │ Packages: 1337 (dpkg)
- Role: Web Dev / IoT Prototyping      │ Role: Cyber Security / Network Audit
+┌──(tonkar293@arch)-[~]
+└─$ fastfetch
+                   -`               tonkar293@arch
+                  .o+`              --------------
+                 `ooo/              OS: Arch Linux (btw) x86_64
+                `+oooo:             Host: Cyberdyne Mainframe v9.0
+               `+oooooo:            Kernel: 9.9.9-quantum-zen
+               -+oooooo+:           Uptime: 9999 days, 99 hours
+             `/:-:++oooo+:          Packages: Infinity (pacman)
+            `/++++/+++++++:         Shell: mind-control-zsh
+           `/++++++++++++++:        CPU: Quantum Neural Net (256 Cores)
+          `/+++ooooooooooooo/`      GPU: Holographic RTX 9090 Ti
+         ./ooosssso++osssssso+`     Memory: 1 Exabyte Quantum RAM
+        .oossssso-````/ossssss+`    Storage: DNA Sequence Drive (1 YB)
+       -osssssso.      :ssssssso.   Role: Absolute System Overlord
+      :osssssss/        osssso+++.  
+     /ossssssss/        +ssssooo/-  
+   `/ossssso+/:-        -:/+osssso+-
+  `+sso+:-`                 `.-/+oso:
+ `++:.                           `-/+/
+ .`                                 `/
+
+──────────────────────────────────────────────────────────────────────────────
+
+┌──(tonkar293@kali)-[~]
+└─$ fastfetch
+                  ..............                tonkar293@kali
+              ..,;:ccc,.                        --------------
+            ......``;lxO.                       OS: Kali GNU/Linux (Underground Edition)
+  .....''''..........,:ld;                      Host: E-Corp Infiltration Node
+             .';;;:::;,,.x,                     Kernel: 6.6.6-darkweb-amd64
+        ..'''.            0Xxoc:,.  ...         Uptime: [CLASSIFIED]
+    ....                ,ONkc;,;cokOdc',.       Packages: 1337000 (0day exploits)
+   .                   OMo           ':ddo.     Shell: zsh (shadow-mode)
+                      dMc               :OO;    CPU: Cryptographic Decryptor Array
+                      0M.                 .:o.  Network: 100 Tbps Satellite Uplink
+                      ;Wd                       Memory: 512 TB HBM4
+                       ;XO,                     Role: Level 99 Cybersecurity Mage
+                         ,d0Odlc;,..
+                             ..',;:cdOOd::,.
+                                      .:d;.':;.
+                                         'd,  .'
+                                           ;l   ..
+                                            .o
+                                              c
+
+──────────────────────────────────────────────────────────────────────────────
+
+┌──(tonkar293@ubuntu)-[~]
+└─$ fastfetch
+             .-/+oossssoo+/-.               tonkar293@ubuntu
+         `:+ssssssssssssssssss+:`           ----------------
+       -+ssssssssssssssssssyyssss+-         OS: Ubuntu 2077 LTS (Cyberpunk Edition)
+     .ossssssssssssssssssdMMMNysssso.       Host: Skynet Central Core Node
+    /ssssssssssshdmmNNmmyNMMMMhssssss       Kernel: 8.0.0-matrix-generic
+   +ssssssssshmydMMMMMMMNddddysssssss       Uptime: Since the Big Bang
+  /sssssssshNMMMyhhyyyyhmNMMMNhssssss       Packages: 9999999 (dpkg)
+ .ssssssssdMMMNhsssssssssshNMMMdsssss       Shell: telepathy 1.0
+  sssssssshNMMMyhhyyyyhmNMMMNhsssssss       CPU: Dyson Sphere Powered Processor
+  +sssssssssdmydMMMMMMMNddddyssssssss       Memory: Infinite Loop RAM
+   /ssssssssssshdmmNNmmyNMMMMhssssss        Role: Universal Matrix Simulator
+    .ossssssssssssssssssdMMMNysssso.
+      -+sssssssssssssssssyyyssss+-
+         `:+ssssssssssssssssss+:`
+             .-/+oossssoo+/-.
+
+──────────────────────────────────────────────────────────────────────────────
+
+PS C:\Users\tonkar293> fastfetch
+                                            tonkar293@windows
+   ################  ################       -----------------
+   ################  ################       OS: Windows 99 Pro Max Ultra x128
+   ################  ################       Host: Stark Industries J.A.R.V.I.S. Rig
+   ################  ################       Kernel: NT 20.0.99999
+   ################  ################       Uptime: Never sleeps
+   ################  ################       Cooling: Liquid Helium Sub-Zero Loop
+   ################  ################       CPU: Intel Core i99 (512 Cores @ 100GHz)
+                                            GPU: Dual NVIDIA RTX 10090 (256GB VRAM)
+   ################  ################       Memory: 1024 GiB DDR10
+   ################  ################       Monitor: 16K Holographic Display
+   ################  ################       Role: Reality Rendering & God-Tier Gaming
+   ################  ################       
+   ################  ################       
+   ################  ################
