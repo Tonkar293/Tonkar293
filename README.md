@@ -53,24 +53,34 @@
 
 <br/>
 
-<!-- ส่วนที่ 4: Terminal (Fastfetch - Fake Specs) -->
+<!-- ส่วนที่ 4: Terminal (Split Pane: Arch Linux & Kali Linux) -->
 ```text
-                   -`               tonkar293@github
-                  .o+`              ----------------
-                 `ooo/              OS: Arch Linux x86_64
-                `+oooo:             Host: Cyberdyne Mainframe v9.0
-               `+oooooo:            Kernel: 7.0.1-zen-hacker
-               -+oooooo+:           Uptime: 1337 days, 24 hours
-             `/:-:++oooo+:          Packages: 9999 (pacman)
-            `/++++/+++++++:         Shell: zsh (oh-my-zsh)
-           `/++++++++++++++:        Terminal: Markdown
-          `/+++ooooooooooooo/`      CPU: Quantum Neural Net Processor (128 Cores)
-         ./ooosssso++osssssso+`     GPU: Holographic Projection Unit RTX 9090
-        .oossssso-````/ossssss+`    Memory: 128GiB DDR6
-       -osssssso.      :ssssssso.   
-      :osssssss/        osssso+++.  
-     /ossssssss/        +ssssooo/-  
-   `/ossssso+/:-        -:/+osssso+-
-  `+sso+:-`                 `.-/+oso:
- `++:.                           `-/+/
- .`                                 `/
+┌──(tonkar293㉿arch)-[~]               │┌──(tonkar293㉿kali)-[~]
+└─$ fastfetch                         │└─$ fastfetch
+                                      │
+                   -`                 │         ..............
+                  .o+`                │             ..,;:ccc,.
+                 `ooo/                │           ......``;lxO.
+                `+oooo:               │ .....''''..........,:ld;
+               `+oooooo:              │            .';;;:::;,,.x,
+               -+oooooo+:             │       ..'''.            0Xxoc:,.  ...
+             `/:-:++oooo+:            │   ....                ,ONkc;,;cokOdc',.
+            `/++++/+++++++:           │  .                   OMo           ':ddo.
+           `/++++++++++++++:          │                     dMc               :OO;
+          `/+++ooooooooooooo/`        │                     0M.                 .:o.
+         ./ooosssso++osssssso+`       │                     ;Wd
+        .oossssso-````/ossssss+`      │                      ;XO,
+       -osssssso.      :ssssssso.     │                        ,d0Odlc;,..
+      :osssssss/        osssso+++.    │                            ..',;:cdOOd::,.
+     /ossssssss/        +ssssooo/-    │                                     .:d;.':;.
+   `/ossssso+/:-        -:/+osssso+-  │                                        'd,  .'
+  `+sso+:-`                 `.-/+oso: │                                          ;l   ..
+ `++:.                           `-/+/│                                           .o
+ .`                                 `/│                                             c
+                                      │
+ OS: Arch Linux x86_64                │ OS: Kali GNU/Linux Rolling x86_64
+ Host: Cyberdyne Mainframe v9.0       │ Host: Windows Subsystem for Linux (WSL2)
+ Kernel: 7.0.1-zen-hacker             │ Kernel: 6.6.9-kali-amd64
+ Shell: zsh (oh-my-zsh)               │ Shell: zsh 5.9
+ Packages: 9999 (pacman)              │ Packages: 1337 (dpkg)
+ Role: Web Dev / IoT Prototyping      │ Role: Cyber Security / Network Audit
