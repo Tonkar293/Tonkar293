@@ -26,15 +26,17 @@
 
 <!-- ส่วนที่ 3: สถิติและทักษะ (ปรับเปลี่ยนมาใช้ตัวเลือกที่เสถียรกว่าและเข้ากับธีม Neon/Dark) -->
 <div align="center">
-  <!-- กล่องที่ 1: GitHub Trophies -->
-  <img src="https://github-profile-trophy.vercel.app/?username=Tonkar293&theme=dracula&no-frame=true&no-bg=true&margin-w=15" alt="GitHub Trophies" />
+<!-- กล่องที่ 1: GitHub Trophies (เพิ่ม &v=1 เพื่อล้างแคช) -->
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=Tonkar293&theme=dracula&no-frame=true&no-bg=true&margin-w=15&v=1" alt="GitHub Trophies" />
+</div>
   
-  <br/><br/>
+<br/><br/>
 
-  <!-- กล่องที่ 2: Activity Graph (กราฟเส้น นีออนสีม่วง-เขียว) -->
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Tonkar293&bg_color=0d1117&color=00ff66&line=a855f7&point=ffffff&area=true&hide_border=true&radius=14" alt="Activity Graph" />
-  
-  <br/><br/>
+<!-- กล่องที่ 2: Activity Graph (เพิ่ม &v=1 เพื่อล้างแคช) -->
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Tonkar293&bg_color=0d1117&color=00ff66&line=a855f7&point=ffffff&area=true&hide_border=true&radius=14&v=1" alt="Activity Graph" />
+</div>
   
   <!-- กล่องที่ 3: Skill Icons (แสดงทักษะภาษาและเครื่องมือ) -->
   <img src="https://skillicons.dev/icons?i=html,css,js,ts,vue,nuxt,py,c,cpp,arduino,mysql,nodejs,vscode,github&theme=dark&perline=7" alt="My Skills" />
