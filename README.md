@@ -24,22 +24,24 @@
 
 <br/>
 
-<!-- ส่วนที่ 3: สถิติและทักษะ (ปรับเปลี่ยนมาใช้ตัวเลือกที่เสถียรกว่าและเข้ากับธีม Neon/Dark) -->
+<!-- ส่วนที่ 3: สถิติและทักษะ (ปรับเป็นป้าย Static ไม่มีวันพัง) -->
 <div align="center">
-<!-- กล่องที่ 1: GitHub Trophies (เพิ่ม &v=1 เพื่อล้างแคช) -->
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Tonkar293&theme=dracula&no-frame=true&no-bg=true&margin-w=15&v=1" alt="GitHub Trophies" />
-</div>
   
-<br/><br/>
-
-<!-- กล่องที่ 2: Activity Graph (เพิ่ม &v=1 เพื่อล้างแคช) -->
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Tonkar293&bg_color=0d1117&color=00ff66&line=a855f7&point=ffffff&area=true&hide_border=true&radius=14&v=1" alt="Activity Graph" />
-</div>
+  <!-- ป้ายสถิติ GitHub (ปรับตัวเลขเองได้ที่ลิงก์) -->
+  <img src="https://img.shields.io/badge/Total_Contributions-56-ff007f?style=for-the-badge&logo=github&logoColor=white" alt="Total Contributions" />
+  <img src="https://img.shields.io/badge/Longest_Streak-5_Days-00f2fe?style=for-the-badge&logo=target&logoColor=white" alt="Longest Streak" />
+  <img src="https://img.shields.io/badge/Repositories-15+-00ff66?style=for-the-badge&logo=gnubash&logoColor=black" alt="Repos" />
   
-  <!-- กล่องที่ 3: Skill Icons (แสดงทักษะภาษาและเครื่องมือ) -->
-  <img src="https://skillicons.dev/icons?i=html,css,js,ts,vue,nuxt,py,c,cpp,arduino,mysql,nodejs,vscode,github&theme=dark&perline=7" alt="My Skills" />
+  <br/><br/>
+  
+  <!-- ป้ายภาษาและเครื่องมือที่ใช้งาน -->
+  <img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D" alt="Vue.js" />
+  <img src="https://img.shields.io/badge/Nuxt.js-002E3B?style=for-the-badge&logo=nuxtdotjs&logoColor=00DC82" alt="Nuxt.js" />
+  <img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" />
+  <img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white" alt="Arduino" />
+  <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+  
 </div>
 
 <br/>
