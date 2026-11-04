@@ -24,18 +24,20 @@
 
 <br/>
 
-<!-- ส่วนที่ 3: GitHub Stats (ปรับลดพารามิเตอร์และสีเพื่อกัน Timeout) -->
+<!-- ส่วนที่ 3: สถิติและทักษะ (ปรับเปลี่ยนมาใช้ตัวเลือกที่เสถียรกว่าและเข้ากับธีม Neon/Dark) -->
 <div align="center">
-  <!-- กล่องที่ 1: Stats -->
-  <img src="https://github-readme-stats.vercel.app/api?username=Tonkar293&show_icons=true&bg_color=135,062c1b,220b38&title_color=00ff66&text_color=e2e8f0&icon_color=00f2fe&ring_color=ff007f&border_color=00ff66&hide_border=false&border_radius=14" height="195" alt="stats graph" />
+  <!-- กล่องที่ 1: GitHub Trophies -->
+  <img src="https://github-profile-trophy.vercel.app/?username=Tonkar293&theme=dracula&no-frame=true&no-bg=true&margin-w=15" alt="GitHub Trophies" />
   
-  <!-- กล่องที่ 2: Streak -->
-  <img src="https://streak-stats.demolab.com?user=Tonkar293&theme=dark&background=135,220b38,0d1117,06283d&border=00f2fe&hide_border=false&border_radius=14&stroke=a855f7&ring=00f2fe&fire=ff007f&currStreakLabel=00ff66&sideLabels=00f2fe&currStreakNum=ffffff&sideNums=ff007f" height="195" alt="streak graph" />
+  <br/><br/>
+
+  <!-- กล่องที่ 2: Activity Graph (กราฟเส้น นีออนสีม่วง-เขียว) -->
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Tonkar293&bg_color=0d1117&color=00ff66&line=a855f7&point=ffffff&area=true&hide_border=true&radius=14" alt="Activity Graph" />
   
   <br/><br/>
   
-  <!-- กล่องที่ 3: Languages -->
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Tonkar293&layout=compact&hide=hack&langs_count=8&bg_color=45,062c1b,06283d&title_color=ff007f&text_color=ffffff&border_color=a855f7&hide_border=false&border_radius=14" height="165" alt="languages graph" />
+  <!-- กล่องที่ 3: Skill Icons (แสดงทักษะภาษาและเครื่องมือ) -->
+  <img src="https://skillicons.dev/icons?i=html,css,js,ts,vue,nuxt,py,c,cpp,arduino,mysql,nodejs,vscode,github&theme=dark&perline=7" alt="My Skills" />
 </div>
 
 <br/>
