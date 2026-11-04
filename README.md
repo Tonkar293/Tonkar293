@@ -53,28 +53,24 @@
 
 <br/>
 
-<!-- ส่วนที่ 4: Terminal (Fastfetch - Animated Arch Linux) -->
-<div align="center">
-  <table style="background-color: #0d1117; border-radius: 14px; border: 1px solid #00ff66;">
-    <tr>
-      <!-- ฝั่งซ้าย: โลโก้แบบเปลี่ยนสีได้ (ดึงไฟล์จากโฟลเดอร์ dist) -->
-      <td align="center" width="300" style="border: none;">
-        <img src="/dist/arch-animated.svg" width="100%" alt="Animated Arch Logo" />
-      </td>
-      <!-- ฝั่งขวา: ข้อมูล System (Fastfetch) -->
-      <td width="400" style="border: none; color: #e2e8f0; font-family: monospace; font-size: 14px; line-height: 1.6;">
-        <span style="color: #00f2fe; font-weight: bold;">tonkar293</span>@<span style="color: #00f2fe; font-weight: bold;">github</span><br/>
-        ----------------<br/>
-        <span style="color: #ff007f; font-weight: bold;">OS:</span> Arch Linux x86_64<br/>
-        <span style="color: #ff007f; font-weight: bold;">Host:</span> Acer Nitro V15 (ANV15-51-50UV)<br/>
-        <span style="color: #ff007f; font-weight: bold;">Kernel:</span> 6.9.8-arch1-1<br/>
-        <span style="color: #ff007f; font-weight: bold;">Uptime:</span> 20 years, 10 months<br/>
-        <span style="color: #ff007f; font-weight: bold;">Packages:</span> 56 (pacman)<br/>
-        <span style="color: #ff007f; font-weight: bold;">Shell:</span> zsh 5.9<br/>
-        <span style="color: #ff007f; font-weight: bold;">CPU:</span> Intel Core i5 (13th Gen)<br/>
-        <span style="color: #ff007f; font-weight: bold;">GPU:</span> NVIDIA GeForce RTX 4050<br/>
-        <span style="color: #ff007f; font-weight: bold;">Memory:</span> 16GiB DDR5
-      </td>
-    </tr>
-  </table>
-</div>
+<!-- ส่วนที่ 4: Terminal (Fastfetch - Fake Specs) -->
+```text
+                   -`               tonkar293@github
+                  .o+`              ----------------
+                 `ooo/              OS: Arch Linux x86_64
+                `+oooo:             Host: Cyberdyne Mainframe v9.0
+               `+oooooo:            Kernel: 7.0.1-zen-hacker
+               -+oooooo+:           Uptime: 1337 days, 24 hours
+             `/:-:++oooo+:          Packages: 9999 (pacman)
+            `/++++/+++++++:         Shell: zsh (oh-my-zsh)
+           `/++++++++++++++:        Terminal: Markdown
+          `/+++ooooooooooooo/`      CPU: Quantum Neural Net Processor (128 Cores)
+         ./ooosssso++osssssso+`     GPU: Holographic Projection Unit RTX 9090
+        .oossssso-````/ossssss+`    Memory: 128GiB DDR6
+       -osssssso.      :ssssssso.   
+      :osssssss/        osssso+++.  
+     /ossssssss/        +ssssooo/-  
+   `/ossssso+/:-        -:/+osssso+-
+  `+sso+:-`                 `.-/+oso:
+ `++:.                           `-/+/
+ .`                                 `/
